@@ -1,0 +1,9 @@
+#productsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#records:nth-child(odd) {
+    background-color: #d0d4dd;
+  }

@@ -1,0 +1,36 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+#sidebar {
+    flex: 10%;
+    background: #1f1f20;
+    padding: 1%;
+    color: white;
+    
+}
+#navLinks {
+    margin-top:7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    
+}
+
+.navLink {
+    white-space: nowrap;
+
+}
+
+#logout:hover {
+    cursor: pointer;
+}
+
+#mainContent {
+    flex: 90%;
+    background: rgb(226, 226, 226);
+    padding: 1%;
+}
+

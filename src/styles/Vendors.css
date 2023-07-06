@@ -1,0 +1,9 @@
+#vendorsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#vendorRecords:nth-child(odd) {
+    background-color: #d0d4dd;
+  }

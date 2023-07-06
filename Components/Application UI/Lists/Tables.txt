@@ -1,0 +1,1693 @@
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle">
+            <div className="overflow-hidden shadow-sm ring-1 ring-black ring-opacity-5">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 lg:pl-8"
+                    >
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6 lg:pr-8">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 lg:pr-8">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  {people.map((person, personIdx) => (
+                    <tr key={person.email} className={personIdx % 2 === 0 ? undefined : 'bg-gray-50'}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      className="py-3 pl-4 pr-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500 sm:pl-6"
+                    >
+                      Name
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+                    >
+                      Title
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+                    >
+                      Email
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+                    >
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <table className="min-w-full divide-y divide-gray-300">
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 md:pl-0"
+                  >
+                    Name
+                  </th>
+                  <th scope="col" className="py-3.5 px-3 text-left text-sm font-semibold text-gray-900">
+                    Title
+                  </th>
+                  <th scope="col" className="py-3.5 px-3 text-left text-sm font-semibold text-gray-900">
+                    Email
+                  </th>
+                  <th scope="col" className="py-3.5 px-3 text-left text-sm font-semibold text-gray-900">
+                    Role
+                  </th>
+                  <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6 md:pr-0">
+                    <span className="sr-only">Edit</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {people.map((person) => (
+                  <tr key={person.email}>
+                    <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 md:pl-0">
+                      {person.name}
+                    </td>
+                    <td className="whitespace-nowrap py-4 px-3 text-sm text-gray-500">{person.title}</td>
+                    <td className="whitespace-nowrap py-4 px-3 text-sm text-gray-500">{person.email}</td>
+                    <td className="whitespace-nowrap py-4 px-3 text-sm text-gray-500">{person.role}</td>
+                    <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 md:pr-0">
+                      <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                        Edit<span className="sr-only">, {person.name}</span>
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="-mx-4 mt-8 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg">
+        <table className="min-w-full divide-y divide-gray-300">
+          <thead className="bg-gray-50">
+            <tr>
+              <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                Name
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+              >
+                Title
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell"
+              >
+                Email
+              </th>
+              <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                Role
+              </th>
+              <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                <span className="sr-only">Edit</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200 bg-white">
+            {people.map((person) => (
+              <tr key={person.email}>
+                <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
+                  {person.name}
+                  <dl className="font-normal lg:hidden">
+                    <dt className="sr-only">Title</dt>
+                    <dd className="mt-1 truncate text-gray-700">{person.title}</dd>
+                    <dt className="sr-only sm:hidden">Email</dt>
+                    <dd className="mt-1 truncate text-gray-500 sm:hidden">{person.email}</dd>
+                  </dl>
+                </td>
+                <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">{person.title}</td>
+                <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">{person.email}</td>
+                <td className="px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                  <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                    Edit<span className="sr-only">, {person.name}</span>
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="-mx-4 mt-8 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg">
+        <table className="min-w-full divide-y divide-gray-300">
+          <thead className="bg-gray-50">
+            <tr>
+              <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                Name
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell"
+              >
+                Title
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+              >
+                Email
+              </th>
+              <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                Role
+              </th>
+              <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                <span className="sr-only">Edit</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200 bg-white">
+            {people.map((person) => (
+              <tr key={person.email}>
+                <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                  {person.name}
+                </td>
+                <td className="hidden whitespace-nowrap px-3 py-4 text-sm text-gray-500 sm:table-cell">
+                  {person.title}
+                </td>
+                <td className="hidden whitespace-nowrap px-3 py-4 text-sm text-gray-500 lg:table-cell">
+                  {person.email}
+                </td>
+                <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                  <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                    Edit<span className="sr-only">, {person.name}</span>
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  {
+    name: 'Lindsay Walton',
+    title: 'Front-end Developer',
+    department: 'Optimization',
+    email: 'lindsay.walton@example.com',
+    role: 'Member',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Status
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+                        <div className="flex items-center">
+                          <div className="h-10 w-10 flex-shrink-0">
+                            <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
+                          </div>
+                          <div className="ml-4">
+                            <div className="font-medium text-gray-900">{person.name}</div>
+                            <div className="text-gray-500">{person.email}</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <div className="text-gray-900">{person.title}</div>
+                        <div className="text-gray-500">{person.department}</div>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                          Active
+                        </span>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  {
+    name: 'Lindsay Walton',
+    title: 'Front-end Developer',
+    department: 'Optimization',
+    email: 'lindsay.walton@example.com',
+    role: 'Member',
+    image:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Status
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+                        <div className="flex items-center">
+                          <div className="h-10 w-10 flex-shrink-0">
+                            <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
+                          </div>
+                          <div className="ml-4">
+                            <div className="font-medium text-gray-900">{person.name}</div>
+                            <div className="text-gray-500">{person.email}</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <div className="text-gray-900">{person.title}</div>
+                        <div className="text-gray-500">{person.department}</div>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                          Active
+                        </span>
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle">
+            <div className="shadow-sm ring-1 ring-black ring-opacity-5">
+              <table className="min-w-full border-separate" style={{ borderSpacing: 0 }}>
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:pl-6 lg:pl-8"
+                    >
+                      Name
+                    </th>
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 hidden border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
+                    >
+                      Title
+                    </th>
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 hidden border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter lg:table-cell"
+                    >
+                      Email
+                    </th>
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter"
+                    >
+                      Role
+                    </th>
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 py-3.5 pr-4 pl-3 backdrop-blur backdrop-filter sm:pr-6 lg:pr-8"
+                    >
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  {people.map((person, personIdx) => (
+                    <tr key={person.email}>
+                      <td
+                        className={classNames(
+                          personIdx !== people.length - 1 ? 'border-b border-gray-200' : '',
+                          'whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8'
+                        )}
+                      >
+                        {person.name}
+                      </td>
+                      <td
+                        className={classNames(
+                          personIdx !== people.length - 1 ? 'border-b border-gray-200' : '',
+                          'whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell'
+                        )}
+                      >
+                        {person.title}
+                      </td>
+                      <td
+                        className={classNames(
+                          personIdx !== people.length - 1 ? 'border-b border-gray-200' : '',
+                          'whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden lg:table-cell'
+                        )}
+                      >
+                        {person.email}
+                      </td>
+                      <td
+                        className={classNames(
+                          personIdx !== people.length - 1 ? 'border-b border-gray-200' : '',
+                          'whitespace-nowrap px-3 py-4 text-sm text-gray-500'
+                        )}
+                      >
+                        {person.role}
+                      </td>
+                      <td
+                        className={classNames(
+                          personIdx !== people.length - 1 ? 'border-b border-gray-200' : '',
+                          'relative whitespace-nowrap py-4 pr-4 pl-3 text-right text-sm font-medium sm:pr-6 lg:pr-8'
+                        )}
+                      >
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr className="divide-x divide-gray-200">
+                    <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-6">
+                      Role
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email} className="divide-x divide-gray-200">
+                      <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap p-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap p-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-6">{person.role}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const transactions = [
+  {
+    id: 'AAPS0L',
+    company: 'Chase & Co.',
+    share: 'CAC',
+    commission: '+$4.37',
+    price: '$3,509.00',
+    quantity: '12.00',
+    netAmount: '$4,397.00',
+  },
+  // More transactions...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Transactions</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A table of placeholder stock market data that does not make any sense.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Export
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                    >
+                      Transaction ID
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Company
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Share
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Commision
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Price
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Quantity
+                    </th>
+                    <th
+                      scope="col"
+                      className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Net amount
+                    </th>
+                    <th scope="col" className="relative whitespace-nowrap py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {transactions.map((transaction) => (
+                    <tr key={transaction.id}>
+                      <td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-6">
+                        {transaction.id}
+                      </td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900">
+                        {transaction.company}
+                      </td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-900">{transaction.share}</td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.commission}</td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.price}</td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.quantity}</td>
+                      <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.netAmount}</td>
+                      <td className="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {transaction.id}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+import { ChevronDownIcon } from '@heroicons/react/solid'
+
+const people = [
+  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+  // More people...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      <a href="#" className="group inline-flex">
+                        Name
+                        <span className="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
+                          <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+                        </span>
+                      </a>
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      <a href="#" className="group inline-flex">
+                        Title
+                        <span className="ml-2 flex-none rounded bg-gray-200 text-gray-900 group-hover:bg-gray-300">
+                          <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+                        </span>
+                      </a>
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      <a href="#" className="group inline-flex">
+                        Email
+                        <span className="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
+                          <ChevronDownIcon
+                            className="invisible ml-2 h-5 w-5 flex-none rounded text-gray-400 group-hover:visible group-focus:visible"
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </a>
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      <a href="#" className="group inline-flex">
+                        Role
+                        <span className="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
+                          <ChevronDownIcon
+                            className="invisible ml-2 h-5 w-5 flex-none rounded text-gray-400 group-hover:visible group-focus:visible"
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </a>
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+import { Fragment } from 'react'
+
+const locations = [
+  {
+    name: 'Edinburgh',
+    people: [
+      { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
+      { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', role: 'Admin' },
+    ],
+  },
+  // More people...
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full">
+                <thead className="bg-white">
+                  <tr>
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  {locations.map((location) => (
+                    <Fragment key={location.name}>
+                      <tr className="border-t border-gray-200">
+                        <th
+                          colSpan={5}
+                          scope="colgroup"
+                          className="bg-gray-50 px-4 py-2 text-left text-sm font-semibold text-gray-900 sm:px-6"
+                        >
+                          {location.name}
+                        </th>
+                      </tr>
+                      {location.people.map((person, personIdx) => (
+                        <tr
+                          key={person.email}
+                          className={classNames(personIdx === 0 ? 'border-gray-300' : 'border-gray-200', 'border-t')}
+                        >
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {person.name}
+                          </td>
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                          <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                            <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                              Edit<span className="sr-only">, {person.name}</span>
+                            </a>
+                          </td>
+                        </tr>
+                      ))}
+                    </Fragment>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const projects = [
+  { id: 1, name: 'New Advertising Campaign', hours: '12.0', rate: '$75.00', price: '$900.00' },
+  // More projects...
+]
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Invoice</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            For work completed from <time dateTime="2022-08-01">August 1, 2022</time> to{' '}
+            <time dateTime="2022-08-31">August 31, 2022</time>.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Print
+          </button>
+        </div>
+      </div>
+      <div className="-mx-4 mt-8 flex flex-col sm:-mx-6 md:mx-0">
+        <table className="min-w-full divide-y divide-gray-300">
+          <thead>
+            <tr>
+              <th
+                scope="col"
+                className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 md:pl-0"
+              >
+                Project
+              </th>
+              <th
+                scope="col"
+                className="hidden py-3.5 px-3 text-right text-sm font-semibold text-gray-900 sm:table-cell"
+              >
+                Hours
+              </th>
+              <th
+                scope="col"
+                className="hidden py-3.5 px-3 text-right text-sm font-semibold text-gray-900 sm:table-cell"
+              >
+                Rate
+              </th>
+              <th
+                scope="col"
+                className="py-3.5 pl-3 pr-4 text-right text-sm font-semibold text-gray-900 sm:pr-6 md:pr-0"
+              >
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {projects.map((project) => (
+              <tr key={project.id} className="border-b border-gray-200">
+                <td className="py-4 pl-4 pr-3 text-sm sm:pl-6 md:pl-0">
+                  <div className="font-medium text-gray-900">{project.name}</div>
+                  <div className="mt-0.5 text-gray-500 sm:hidden">
+                    {project.hours} hours at {project.rate}
+                  </div>
+                </td>
+                <td className="hidden py-4 px-3 text-right text-sm text-gray-500 sm:table-cell">{project.hours}</td>
+                <td className="hidden py-4 px-3 text-right text-sm text-gray-500 sm:table-cell">{project.rate}</td>
+                <td className="py-4 pl-3 pr-4 text-right text-sm text-gray-500 sm:pr-6 md:pr-0">{project.price}</td>
+              </tr>
+            ))}
+          </tbody>
+          <tfoot>
+            <tr>
+              <th
+                scope="row"
+                colSpan={3}
+                className="hidden pl-6 pr-3 pt-6 text-right text-sm font-normal text-gray-500 sm:table-cell md:pl-0"
+              >
+                Subtotal
+              </th>
+              <th scope="row" className="pl-4 pr-3 pt-6 text-left text-sm font-normal text-gray-500 sm:hidden">
+                Subtotal
+              </th>
+              <td className="pl-3 pr-4 pt-6 text-right text-sm text-gray-500 sm:pr-6 md:pr-0">$3,900.00</td>
+            </tr>
+            <tr>
+              <th
+                scope="row"
+                colSpan={3}
+                className="hidden pl-6 pr-3 pt-4 text-right text-sm font-normal text-gray-500 sm:table-cell md:pl-0"
+              >
+                Tax
+              </th>
+              <th scope="row" className="pl-4 pr-3 pt-4 text-left text-sm font-normal text-gray-500 sm:hidden">
+                Tax
+              </th>
+              <td className="pl-3 pr-4 pt-4 text-right text-sm text-gray-500 sm:pr-6 md:pr-0">$585.00</td>
+            </tr>
+            <tr>
+              <th
+                scope="row"
+                colSpan={3}
+                className="hidden pl-6 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell md:pl-0"
+              >
+                Total
+              </th>
+              <th scope="row" className="pl-4 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden">
+                Total
+              </th>
+              <td className="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-6 md:pr-0">
+                $4,485.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  )
+}
+/* This example requires Tailwind CSS v2.0+ */
+const plans = [
+  {
+    id: 1,
+    name: 'Hobby',
+    memory: '4 GB RAM',
+    cpu: '4 CPUs',
+    storage: '128 GB SSD disk',
+    price: '$40',
+    isCurrent: false,
+  },
+  {
+    id: 2,
+    name: 'Startup',
+    memory: '8 GB RAM',
+    cpu: '6 CPUs',
+    storage: '256 GB SSD disk',
+    price: '$80',
+    isCurrent: true,
+  },
+  // More plans...
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Plans</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            Your team is on the <strong className="font-semibold text-gray-900">Startup</strong> plan. The next payment
+            of $80 will be due on August 4, 2022.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Update credit card
+          </button>
+        </div>
+      </div>
+      <div className="-mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg">
+        <table className="min-w-full divide-y divide-gray-300">
+          <thead>
+            <tr>
+              <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                Plan
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+              >
+                Memory
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+              >
+                CPU
+              </th>
+              <th
+                scope="col"
+                className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
+              >
+                Storage
+              </th>
+              <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                Price
+              </th>
+              <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                <span className="sr-only">Select</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {plans.map((plan, planIdx) => (
+              <tr key={plan.id}>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-transparent',
+                    'relative py-4 pl-4 sm:pl-6 pr-3 text-sm'
+                  )}
+                >
+                  <div className="font-medium text-gray-900">
+                    {plan.name}
+                    {plan.isCurrent ? <span className="text-indigo-600">(Current Plan)</span> : null}
+                  </div>
+                  <div className="mt-1 flex flex-col text-gray-500 sm:block lg:hidden">
+                    <span>
+                      {plan.memory} / {plan.cpu}
+                    </span>
+                    <span className="hidden sm:inline"> · </span>
+                    <span>{plan.storage}</span>
+                  </div>
+                  {planIdx !== 0 ? <div className="absolute right-0 left-6 -top-px h-px bg-gray-200" /> : null}
+                </td>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-gray-200',
+                    'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                  )}
+                >
+                  {plan.memory}
+                </td>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-gray-200',
+                    'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                  )}
+                >
+                  {plan.cpu}
+                </td>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-gray-200',
+                    'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                  )}
+                >
+                  {plan.storage}
+                </td>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-gray-200',
+                    'px-3 py-3.5 text-sm text-gray-500'
+                  )}
+                >
+                  <div className="sm:hidden">{plan.price}/mo</div>
+                  <div className="hidden sm:block">{plan.price}/month</div>
+                </td>
+                <td
+                  className={classNames(
+                    planIdx === 0 ? '' : 'border-t border-transparent',
+                    'relative py-3.5 pl-3 pr-4 sm:pr-6 text-right text-sm font-medium'
+                  )}
+                >
+                  <button
+                    type="button"
+                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                    disabled={plan.isCurrent}
+                  >
+                    Select<span className="sr-only">, {plan.name}</span>
+                  </button>
+                  {planIdx !== 0 ? <div className="absolute right-6 left-0 -top-px h-px bg-gray-200" /> : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+/*
+  This example requires Tailwind CSS v3.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
+import { useLayoutEffect, useRef, useState } from 'react'
+
+const people = [
+  {
+    name: 'Lindsay Walton',
+    title: 'Front-end Developer',
+    email: 'lindsay.walton@example.com',
+    role: 'Member',
+  },
+  // More people...
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  const checkbox = useRef()
+  const [checked, setChecked] = useState(false)
+  const [indeterminate, setIndeterminate] = useState(false)
+  const [selectedPeople, setSelectedPeople] = useState([])
+
+  useLayoutEffect(() => {
+    const isIndeterminate = selectedPeople.length > 0 && selectedPeople.length < people.length
+    setChecked(selectedPeople.length === people.length)
+    setIndeterminate(isIndeterminate)
+    checkbox.current.indeterminate = isIndeterminate
+  }, [selectedPeople])
+
+  function toggleAll() {
+    setSelectedPeople(checked || indeterminate ? [] : people)
+    setChecked(!checked && !indeterminate)
+    setIndeterminate(false)
+  }
+
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title, email and role.
+          </p>
+        </div>
+        <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          >
+            Add user
+          </button>
+        </div>
+      </div>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="relative overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              {selectedPeople.length > 0 && (
+                <div className="absolute top-0 left-12 flex h-12 items-center space-x-3 bg-gray-50 sm:left-16">
+                  <button
+                    type="button"
+                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                  >
+                    Bulk edit
+                  </button>
+                  <button
+                    type="button"
+                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                  >
+                    Delete all
+                  </button>
+                </div>
+              )}
+              <table className="min-w-full table-fixed divide-y divide-gray-300">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="relative w-12 px-6 sm:w-16 sm:px-8">
+                      <input
+                        type="checkbox"
+                        className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 sm:left-6"
+                        ref={checkbox}
+                        checked={checked}
+                        onChange={toggleAll}
+                      />
+                    </th>
+                    <th scope="col" className="min-w-[12rem] py-3.5 pr-3 text-left text-sm font-semibold text-gray-900">
+                      Name
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Title
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Email
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Role
+                    </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                      <span className="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                  {people.map((person) => (
+                    <tr key={person.email} className={selectedPeople.includes(person) ? 'bg-gray-50' : undefined}>
+                      <td className="relative w-12 px-6 sm:w-16 sm:px-8">
+                        {selectedPeople.includes(person) && (
+                          <div className="absolute inset-y-0 left-0 w-0.5 bg-indigo-600" />
+                        )}
+                        <input
+                          type="checkbox"
+                          className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 sm:left-6"
+                          value={person.email}
+                          checked={selectedPeople.includes(person)}
+                          onChange={(e) =>
+                            setSelectedPeople(
+                              e.target.checked
+                                ? [...selectedPeople, person]
+                                : selectedPeople.filter((p) => p !== person)
+                            )
+                          }
+                        />
+                      </td>
+                      <td
+                        className={classNames(
+                          'whitespace-nowrap py-4 pr-3 text-sm font-medium',
+                          selectedPeople.includes(person) ? 'text-indigo-600' : 'text-gray-900'
+                        )}
+                      >
+                        {person.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                      <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
+                          Edit<span className="sr-only">, {person.name}</span>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+ 

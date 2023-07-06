@@ -1,0 +1,10 @@
+#dashboardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#dashboardContainer > div {
+    flex: 10vh;
+    padding:2vh;
+}
