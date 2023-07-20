@@ -18,7 +18,7 @@ export const Dashboard = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/",
             headers: {
                 Authorization: "Bearer " + props.token 
             }

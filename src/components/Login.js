@@ -15,7 +15,7 @@ const Login = props => {
     const logMeIn = event => {
         axios({
             method: "POST",
-            url:"https://161.35.197.253:5001/authenticate",
+            url:"https://plankton-app-brdf6.ondigitalocean.app/authenticate",
             data: {
                 username,
                 password

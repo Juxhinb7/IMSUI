@@ -26,7 +26,7 @@ export const Products = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/products/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/products/view",
             headers: {
                 Authorization: "Bearer " + props.token
             } 
@@ -85,7 +85,7 @@ export const Products = props => {
         formData.append("code", code);
         formData.append("type", type);
         
-        axios.post("https://161.35.197.253:5001/products/add", formData, 
+        axios.post("https://plankton-app-brdf6.ondigitalocean.app/products/add", formData, 
         {headers: {Authorization: "Bearer " + props.token}})
         .then(response => {
             response.data.access_token && props.setToken(response.data.access_token);
@@ -141,7 +141,7 @@ export const Products = props => {
         formData.append("title", title);
         formData.append("code", code);
         formData.append("type", type);
-        axios.post(`https://161.35.197.253:5001/products/edit/${product_id}`, formData, {
+        axios.post(`https://plankton-app-brdf6.ondigitalocean.app/products/edit/${product_id}`, formData, {
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -177,7 +177,7 @@ export const Products = props => {
     }
 
     const deleteProduct = (product_id, e) => {
-        axios.delete(`https://161.35.197.253:5001/products/delete/${product_id}`, {
+        axios.delete(`https://plankton-app-brdf6.ondigitalocean.app/products/delete/${product_id}`, {
             headers: {
                 Authorization: "Bearer " + props.token
             }

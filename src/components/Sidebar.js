@@ -9,7 +9,7 @@ export const Sidebar = props => {
     const logMeOut = event => {
         axios({
             method: "DELETE",
-            url: "http://161.35.197.253:5001/logout",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/logout",
         })
         .then(response => {
             props.removeToken();

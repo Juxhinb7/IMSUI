@@ -23,7 +23,7 @@ export const Customers = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/customers/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/customers/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -87,7 +87,7 @@ export const Customers = props => {
     const addCustomer = event => {
         axios({
             method: "POST",
-            url: "https://161.35.197.253:5001/customers/add",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/customers/add",
             data: {
                 firstName,
                 lastName,
@@ -156,7 +156,7 @@ export const Customers = props => {
     }
 
     const editCustomer = (customer_Id, event) => {
-        axios.post(`https://161.35.197.253:5001/customers/edit/${customer_Id}`, {
+        axios.post(`https://plankton-app-brdf6.ondigitalocean.app/customers/edit/${customer_Id}`, {
             firstName,
             lastName,
             contact,
@@ -201,7 +201,7 @@ export const Customers = props => {
     }
 
     const deleteCustomer = (customer_id, event) => {
-        axios.delete(`https://161.35.197.253:5001/customers/delete/${customer_id}`, {
+        axios.delete(`https://plankton-app-brdf6.ondigitalocean.app/customers/delete/${customer_id}`, {
             headers: {
                 Authorization: "Bearer " + props.token
             }

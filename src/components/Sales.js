@@ -24,7 +24,7 @@ export const Sales = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/sales/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/sales/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -49,7 +49,7 @@ export const Sales = props => {
         setOpen(true);
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/sales/options/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/sales/options/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -93,7 +93,7 @@ export const Sales = props => {
     const addSale = event => {
         axios({
             method: "POST",
-            url: "https://161.35.197.253:5001/sales/add",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/sales/add",
             data: {
                 customerId,
                 productId,
@@ -141,7 +141,7 @@ export const Sales = props => {
     const handleOpenEdit = (saleId, quantity, paymentType, date) => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/sales/options/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/sales/options/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -172,7 +172,7 @@ export const Sales = props => {
     }
 
     const editSale = (sale_id, event) => {
-        axios.post(`https://161.35.197.253:5001/sales/edit/${sale_id}`, {
+        axios.post(`https://plankton-app-brdf6.ondigitalocean.app/sales/edit/${sale_id}`, {
             customerId,
             productId,
             quantity,
@@ -214,7 +214,7 @@ export const Sales = props => {
     }
 
     const deleteSale = (sale_id, event) => {
-        axios.delete(`https://161.35.197.253:5001/sales/delete/${sale_id}`, {
+        axios.delete(`https://plankton-app-brdf6.ondigitalocean.app/sales/delete/${sale_id}`, {
             headers: {
                 Authorization: "Bearer " + props.token
             }

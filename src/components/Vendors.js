@@ -23,7 +23,7 @@ export const Vendors = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/vendors/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/vendors/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -68,7 +68,7 @@ export const Vendors = props => {
     const addVendor = event => {
         axios({
             method: "POST",
-            url: "https://161.35.197.253:5001/vendors/add",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/vendors/add",
             data: {
                 name,
                 contact,
@@ -134,7 +134,7 @@ export const Vendors = props => {
     }
 
     const editVendor = (vendor_id, event) => {
-        axios.post(`https://161.35.197.253:5001/vendors/edit/${vendor_id}`, {
+        axios.post(`https://plankton-app-brdf6.ondigitalocean.app/vendors/edit/${vendor_id}`, {
             name,
             contact,
             country,
@@ -173,7 +173,7 @@ export const Vendors = props => {
     }
 
     const deleteVendor = (vendor_id, event) => {
-        axios.delete(`https://161.35.197.253:5001/vendors/delete/${vendor_id}`, {
+        axios.delete(`https://plankton-app-brdf6.ondigitalocean.app/vendors/delete/${vendor_id}`, {
             headers: {
                 Authorization: "Bearer " + props.token,
             }

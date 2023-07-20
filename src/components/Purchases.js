@@ -23,7 +23,7 @@ export const Purchases = props => {
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/purchases/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/purchases/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -46,7 +46,7 @@ export const Purchases = props => {
         setOpen(true);
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/purchases/options/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/options/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -94,7 +94,7 @@ export const Purchases = props => {
     const addPurchase = event => {
         axios({
             method: "POST",
-            url: "https://161.35.197.253:5001/purchases/add",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/purchases/add",
             data: {
                 productId,
                 vendorId,
@@ -134,7 +134,7 @@ export const Purchases = props => {
     const handleOpenEdit = (purchaseId, quantity, paymentType, date) => {
         axios({
             method: "GET",
-            url: "https://161.35.197.253:5001/purchases/options/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/purchases/options/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
@@ -165,7 +165,7 @@ export const Purchases = props => {
     }
 
     const editPurchase = (purchase_id, event) => {
-        axios.post(`https://161.35.197.253:5001/purchases/edit/${purchase_id}`, {
+        axios.post(`https://plankton-app-brdf6.ondigitalocean.app/purchases/edit/${purchase_id}`, {
             productId,
             vendorId,
             quantity,
@@ -205,7 +205,7 @@ export const Purchases = props => {
     }
 
     const deletePurchase = (purchase_id, event) => {
-        axios.delete(`https://161.35.197.253:5001/purchases/delete/${purchase_id}`, {
+        axios.delete(`https://plankton-app-brdf6.ondigitalocean.app/purchases/delete/${purchase_id}`, {
             headers: {
                 Authorization: "Bearer " + props.token
             }
