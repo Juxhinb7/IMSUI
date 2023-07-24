@@ -46,7 +46,7 @@ export const Purchases = props => {
         setOpen(true);
         axios({
             method: "GET",
-            url: "https://plankton-app-brdf6.ondigitalocean.app/options/view",
+            url: "https://plankton-app-brdf6.ondigitalocean.app/purchases/options/view",
             headers: {
                 Authorization: "Bearer " + props.token
             }
